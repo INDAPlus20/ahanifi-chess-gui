@@ -279,7 +279,7 @@ impl event::EventHandler for AppState {
 }
 
 pub fn main() -> GameResult {
-    let resource_dir = path::PathBuf::from("./chess_png");
+    let resource_dir = path::PathBuf::from("./resources");
 
     let context_builder = ggez::ContextBuilder::new("schack", "vem vet inte")
         .add_resource_path(resource_dir) // Import image files to GGEZ
