@@ -271,6 +271,7 @@ impl event::EventHandler for AppState {
             KeyCode::R => {
                 self.game = Game::new();
                 self.possible_moves = None;
+                self.game.player=Team::Black;
                 self.game.start_round();
             }
             _ => (),
